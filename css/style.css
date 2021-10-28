@@ -1,0 +1,75 @@
+@import url(reset.css);
+@import url(reset-form.css);
+@import url(variables.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    font-family: "Roboto";
+}
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background: #292929;
+    background-size: contain;
+    font-family: "Roboto";
+}
+h1{
+    font-size: 2rem;
+}
+.logos{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-flow: row wrap;
+    opacity: .5;
+}
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: red;
+    animation: 3s ease-in-out infinite clignotte;
+}
+
+@keyframes clignotte {
+    0%{
+        opacity: 1;
+        
+    }
+    50% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    vertical-align: center;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 1rem;
+    width: 90vw;
+    height: 100%;
+}
+
+form label {
+    font-family: "Roboto";
+    font-size: 2rem;
+}
+
+form input {
+    margin: 2rem 0;
+    background: #FFF;
+    height: 2rem;
+    width: 50%;
+    border: 2px ridge #000;
+    border-radius: 1rem;
+    padding: .7rem;
+}
