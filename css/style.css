@@ -45,7 +45,7 @@ h1{
 }
 
 .switch-style #kappa:checked ~ body {
-    width: 75%;
+    width: 75vw;
 }
 
 .logos{
