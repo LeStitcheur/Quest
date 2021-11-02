@@ -4,6 +4,9 @@
 
 *{
     font-family: "Roboto";
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.5rem;
 }
 body{
     width: 100vw;
@@ -101,15 +104,28 @@ form label {
     z-index: 2;
 }
 
-form textarea {
+form textarea, form input[type="date"] {
     margin: 2rem 0;
     background: #FFF;
     height: 2rem;
     width: 50%;
+    color: black;
+    font-size: 1.5rem;
     border: 2px ridge #000;
     border-radius: 1rem;
     padding: .7rem;
     z-index: 2;
+}
+
+form input[type="date"]{
+    text-align: center;
+}
+
+form span{
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    padding: 2rem;
 }
 
 footer{

@@ -28,60 +28,66 @@
     Nous invitons les rédacteurs de cette auto-analyse à faire preuve de la plus grande sincérité lors de l'expression de leurs réponses.</h2>
 
     
-    <form action="#" method="post">
-        <label for="">Quelles étaient vos attentes en entrant sur le chantier d'insertion de l'ULAMIR-CPIE ?</label>
-        <textarea name="un" id="" spellcheck="true"></textarea>
-        <label for="">Dans quelles mesures les avez vous atteintes ?</label>
-        <textarea name="deux" id=""></textarea>
-        <label for="">Quels avis avez vous sur le chantier de l’ULAMIR-CPIE ?</label>
-        <textarea name="trois" id=""></textarea>
-        <label for="">Auriez-vous des idées pour l’améliorer ?</label>
-        <textarea name="quatre" id=""></textarea>
-        <label for="">Les conditions de travail sont-elles satisfaisantes ? Dans quelles mesures ?</label>
+    <form action="traitement/form.php" method="post">
+        <label for="nom">Votre nom</label>
+        <textarea name="nom" id="nom" spellcheck="true"></textarea>
+        <label for="prenom">Votre prénom</label>
+        <textarea name="prenom" id="prenom"></textarea>
+        <label for="date">Date de prise de poste</label>
+        <input type="date" name="date" id="date">
+        <label for="un">Quelles étaient vos attentes en entrant sur le chantier d'insertion de l'ULAMIR-CPIE ?</label>
+        <textarea name="un" id="un" spellcheck="true"></textarea>
+        <label for="deux">Dans quelles mesures les avez vous atteintes ?</label>
+        <textarea name="deux" id="deux"></textarea>
+        <label for="trois">Quels avis avez vous sur le chantier de l’ULAMIR-CPIE ?</label>
+        <textarea name="trois" id="trois"></textarea>
+        <label for="quatre">Auriez-vous des idées pour l’améliorer ?</label>
+        <textarea name="quatre" id="quatre"></textarea>
         <span>Quel est votre avis sur :</span>
-        <textarea name="cinq" id=""></textarea>
-        <label for="">Le travaille dans le groupe du chantier ?</label>
-        <textarea name="six" id=""></textarea>
-        <label for="">La communication au sein du groupe du chantier ?</label>
-        <textarea name="sept" id=""></textarea>
-        <label for="">Le travaille avec l’encadrant technique ?</label>
-        <textarea name="huit" id=""></textarea>
-        <label for="">La communication avec l’encadrant technique ?</label>
-        <textarea name="neuf" id=""></textarea>
-        <label for="">Le travaille avec la CIP (conseillère d’insertion professionnel) ?</label>
-        <textarea name="dix" id=""></textarea>
-        <label for="">La communication avec la CIP (conseillère d’insertion professionnel) ?</label>
-        <textarea name="onze" id=""></textarea>
-        <label for="">Le travaille avec le coordinateur ?</label>
-        <textarea name="douze" id=""></textarea>
-        <label for="">La communication avec le coordinateur ?</label>
-        <textarea name="treize" id=""></textarea>
-        <label for="">Le travaille avec la direction ?</label>
-        <textarea name="quatorze" id=""></textarea>
-        <label for="">La communication avec la direction ?</label>
-        <textarea name="quinze" id=""></textarea>
-        <label for=""> Votre de travail personnel ?</label>
-        <textarea name="seize" id=""></textarea>
-        <label for="">Votre travail avec le groupe ?</label>
-        <textarea name="dixsept" id=""></textarea>
-        <label for="">Votre communication avec les autres ?</label>
-        <textarea name="dixhuit" id=""></textarea>
-        <label for="">Votre communication avec les autres ?</label>
-        <textarea name="dixneuf" id=""></textarea>
-        <label for="">Votre avis sur le groupe ?</label>
-        <textarea name="vingt" id=""></textarea>
-        <label for="">Votre avenir professionnel ?</label>
-        <textarea name="vingtun" id=""></textarea>
-        <label for="">Êtes-vous satisfaits de l’accompagnement ?  </label>
-        <textarea name="vingtdeux" id=""></textarea>
-        <label for="">Avez-vous d’autres points à aborder ?  (si oui lequel)</label>
-        <textarea name="vingttrois" id=""></textarea>
+        <label for="cinq">Les conditions de travail sont-elles satisfaisantes ? Dans quelles mesures ?</label>
+        <textarea name="cinq" id="cinq"></textarea>
+        <label for="six">Le travaille dans le groupe du chantier ?</label>
+        <textarea name="six" id="six"></textarea>
+        <label for="sept">La communication au sein du groupe du chantier ?</label>
+        <textarea name="sept" id="sept"></textarea>
+        <label for="huit">Le travaille avec l’encadrant technique ?</label>
+        <textarea name="huit" id="huit"></textarea>
+        <label for="neuf">La communication avec l’encadrant technique ?</label>
+        <textarea name="neuf" id="neuf"></textarea>
+        <label for="dix">Le travaille avec la CIP (conseillère d’insertion professionnel) ?</label>
+        <textarea name="dix" id="dix"></textarea>
+        <label for="onze">La communication avec la CIP (conseillère d’insertion professionnel) ?</label>
+        <textarea name="onze" id="onze"></textarea>
+        <label for="douze">Le travaille avec le coordinateur ?</label>
+        <textarea name="douze" id="douze"></textarea>
+        <label for="treize">La communication avec le coordinateur ?</label>
+        <textarea name="treize" id="treize"></textarea>
+        <label for="quatorze">Le travaille avec la direction ?</label>
+        <textarea name="quatorze" id="quatorze"></textarea>
+        <label for="quinze">La communication avec la direction ?</label>
+        <textarea name="quinze" id="quinze"></textarea>
+        <label for="seize"> Votre de travail personnel ?</label>
+        <textarea name="seize" id="seize"></textarea>
+        <label for="dixsept">Votre travail avec le groupe ?</label>
+        <textarea name="dixsept" id="dixsept"></textarea>
+        <label for="dixhuit">Votre communication avec les autres ?</label>
+        <textarea name="dixhuit" id="dixhuit"></textarea>
+        <label for="dixneuf">Votre communication avec les autres ?</label>
+        <textarea name="dixneuf" id="dixneuf"></textarea>
+        <label for="vingt">Votre avis sur le groupe ?</label>
+        <textarea name="vingt" id="vingt"></textarea>
+        <label for="vingtun">Votre avenir professionnel ?</label>
+        <textarea name="vingtun" id="vingtun"></textarea>
+        <label for="vingtdeux">Êtes-vous satisfaits de l’accompagnement ?  </label>
+        <textarea name="vingtdeux" id="vingtdeux"></textarea>
+        <label for="vingttrois">Avez-vous d’autres points à aborder ?  (si oui lequel)</label>
+        <textarea name="vingttrois" id="vingttrois"></textarea>
         <button>
             <input type="submit" value="Envoyer">
         </button>
     </form>
 
-<footer>Design By &copy;LeStitcheurFou</footer>
+<footer>Design and dev By &copy;<a href="https://github.com/LeStitcheurF0u">LeStitcheurFou</a></footer>
 
 
 </body>
