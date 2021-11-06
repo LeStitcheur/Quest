@@ -7,7 +7,7 @@
         $password = $_POST['password'];
 
         if($login !== "" && $password !== ""){
-            $sql = "SELECT * FROM `connect` WHERE `login` = :login";
+            $sql = "SELECT COUNT(*) FROM `connect` WHERE `login` = :login";
             
             $query = $db->prepare($sql);
 
@@ -17,26 +17,18 @@
 
             $user = $query->fetch();
 
-            echo $password;
-            echo '<br>';
-            echo $user
-            echo $user['password'];
-            var_dump($user);
-            //if(!$user){
-            //    die("L'identifiant est incorrect");
-            //}
-            //if(!password_verify($password, $user["password"])){
-            //    die('Le mot de passe est incorrect');
-            //}
+            if($user['COUNT(*)'] == 1){
+                session_start();
+                $_SESSION['user'] = [
+                    "id" => $user['id'],
+                    "pseudo" => $user['login']
+                ];
 
-            //session_start();
+                header('Location: ../results/resultats');
+            }else{
+                header('Location: ../results/login.php?erreur=1');
+            }           
 
-            //$_SESSION["user"] = [
-            //    "id" => $user["id"],
-             //   "pseudo" => $user["login"],
-            //];
-
-            //header('Location: ../results/resultats.php');
         
         }
             

@@ -1,8 +1,8 @@
 <?php
-    define("DBHOST", "localhost");
-    define("DBUSER","root");
-    define("DBPASS","");
-    define("DBNAME","quest");
+    define("DBHOST", "foudwicha.mysql.db");
+    define("DBUSER","foudwicha");
+    define("DBPASS","Ht5AzC8b9");
+    define("DBNAME","foudwicha");
 
     $dsn = "mysql:dbname=".DBNAME.";host=".DBHOST;
 
