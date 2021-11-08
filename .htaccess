@@ -1,0 +1,2 @@
+ErrorDocument 404 /introuvable.html
+ErrorDocument 500 /introuvable.html

@@ -25,6 +25,17 @@
     <a href="../ressources/disconnect.php">Se déconnecter</a>
     <h1>Liste des résultat des formulaires</h1>
 
+
+    <?php
+
+        if(isset($_GET['erreur'])){
+            if($_GET['erreur'] == "true"){
+                echo "<h2>Erreur inconnue</h2>";
+            }
+        }
+
+    ?>
+
     <table class="table">
         <thead>
             <tr>
@@ -44,7 +55,7 @@
             <tr>
                 <th scope="row"><?=$result['id'];?></td>
                 <td><?=$result['nom'];?></td>
-                <td><a href="result.php?id=<?=$result['id'];?>&name=<?=$result['nom'];?>"><img src="../media/img/find.png" alt="Voir les réponses"></a> | <a href="../traitement/delete.php?id=<?=$result['id'];?>"><img src="../media/img/delete.png" alt="supprimer"></a></td>
+                <td><a href="result.php?id=<?=$result['id'];?>&name=<?=$result['nom'];?>"><img src="../media/img/find.png" alt="Voir les réponses"></a> | <a href="../traitement/del.php?id=<?=$result['id'];?>"><img src="../media/img/delete.png" alt="supprimer"></a></td>
             </tr>
             <?php 
                 } $requete->closeCursor();
