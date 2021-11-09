@@ -1,7 +1,7 @@
 <?php
     include ('../ressources/dbconnect.php');
 
-    $nom = $_POST['nom'];
+    $nom = htmlspecialcharts($_POST['nom']);
     $prenom = $_POST['prenom'];
     $date = $_POST['date'];
     $un = $_POST['un'];
