@@ -5,17 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <title>Auto-analyse du chantier d’insertion numérique :</title>
+   <title>Auto-analyse du chantier d’insertion numérique :</title>
 </head>
 <body>
     
     <div class="header">
-        <div class="logos">
-            <img class="capsule" src="media/img/capsule.png" alt="Logo capsule">
-            <img src="media/img/ulamir.png" alt="Logo ulamir" class="ulamir">
-        </div>
         <h1>Auto-analyse du chantier d’insertion numérique</h1>
         <div class="switch-style">
             <input type="checkbox" name="kappa" id="kappa">
@@ -27,7 +21,11 @@
     <h2>⚠ Attention ⚠<br>Le document que vous allez remplir est basé sur le volontariat.<br>
     Nous invitons les rédacteurs de cette auto-analyse à faire preuve de la plus grande sincérité lors de l'expression de leurs réponses.</h2>
     <h2>Les champs sont limités à 255 caractères !</h2>
-    
+    <div class="logos">
+        <img class="capsule" src="media/img/capsule.png" alt="Logo capsule">
+        <img class="ulamir" src="media/img/ulamir.png" alt="Logo ulamir">
+    </div>
+    <div class="container">
     <form action="traitement/form.php" method="post">
         <label for="nom">Votre nom</label>
         <input type="text" name="nom" id="nom"/>
@@ -72,8 +70,6 @@
         <textarea name="dixsept" id="dixsept"></textarea>
         <label for="dixhuit">Votre communication avec les autres ?</label>
         <textarea name="dixhuit" id="dixhuit"></textarea>
-        <label for="dixneuf">Votre communication avec les autres ?</label>
-        <textarea name="dixneuf" id="dixneuf"></textarea>
         <label for="vingt">Votre avis sur le groupe ?</label>
         <textarea name="vingt" id="vingt"></textarea>
         <label for="vingtun">Votre avenir professionnel ?</label>
@@ -84,7 +80,7 @@
         <textarea name="vingttrois" id="vingttrois"></textarea>
         <input class='btn btn-primary' type="submit" value="Envoyer">
     </form>
-
+</div>
 <footer>Design and dev By &copy;<a href="https://github.com/LeStitcheurF0u">LeStitcheurFou</a></footer>
 
 

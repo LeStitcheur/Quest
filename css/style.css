@@ -9,28 +9,24 @@
     font-size: 1.5rem;
 }
 body{
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     background-size: contain;
     font-family: "Roboto";
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: space-around;
     align-content: center;
     align-items: center;
+    overflow-x: hidden;
+    z-index: 0;
 }
 .header {
     display: flex;
     flex-flow: row nowrap;
 }
- .logos {
-    position: absolute;
-    top: 5px;
-    left: 5px;
- }
- 
- 
-.header .logos img{
+  
+.header img{
     width: 100px;
     height: 100px;
 }
@@ -43,11 +39,8 @@ h1{
     text-align: center;
     margin: 35px;
 }
-
-
-
 .switch-style{
-    position:absolute;
+    position: relative;
     top: 5px;
     right: 5px;
     display: flex;
@@ -94,10 +87,33 @@ h2 {
     }
 }
 
+.logos {
+    display: flex;
+    position: sticky;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 96%;
+    height: auto;
+    z-index: -2;
+}
+.capsule, .ulamir {
+    display: block;
+    position: sticky;
+    width: 200px;
+    z-index: -2;
+}
+.container {
+    display: block;
+    position: absolute;
+    top: 55%;
+}
 form {
     padding: 35px;
     display: flex;
     flex-flow: column nowrap;
+    position: relative;
+    padding-top: -40%;
     justify-content: space-between;
     align-content: center;
     align-items: center;
@@ -118,7 +134,7 @@ form label {
 form textarea, form input, form input[type="date"] {
     margin: 2rem 0;
     background: #FFF;
-    height: 2rem;
+    height: 5rem;
     width: 50%;
     color: black;
     font-size: 1.5rem;
@@ -149,6 +165,7 @@ footer{
 
 
 /*Page resultat*/
+
 table{
     width: 90vw;
     height: 100vh;
