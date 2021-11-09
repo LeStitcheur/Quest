@@ -7,11 +7,12 @@
         $password = $_POST['password'];
 
         if($login !== "" && $password !== ""){
-            $sql = "SELECT COUNT(*) FROM `connect` WHERE `login` = :login";
+            $sql = "SELECT COUNT(*) FROM `connect` WHERE `login` = :login AND `password` = MD5(CONCAT(:password))";
             
             $query = $db->prepare($sql);
 
             $query->bindValue(":login", $login, PDO::PARAM_STR);
+            $query->bindValue(":password", $password, PDO::PARAM_STR);
 
             $query->execute();
 
